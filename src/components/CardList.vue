@@ -20,7 +20,7 @@
         <template #extra>
           <img width="272" alt="logo" :src="medicalPic" />
         </template>
-        <a-list-item-meta :description="item.description">
+        <a-list-item-meta :description="item.author">
           <template #title>
             <a :href="item.href">{{ item.title }}</a>
           </template>
@@ -113,8 +113,8 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const actions: Record<any, any>[] = [
-  { type: StarOutlined, text: num[0] },
-  { type: LikeOutlined, text: "0" },
-  { type: MessageOutlined, text: "0" },
+  { type: StarOutlined, text: "10" },
+  { type: LikeOutlined, text: "4" },
+  { type: MessageOutlined, text: "5" },
 ];
 </script>
